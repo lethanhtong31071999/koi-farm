@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Santoshi, Arial, Helvetica, sans-serif;
+  @apply w-screen min-h-screen overflow-x-hidden text-dark-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-dark;
+}
+
+img {
+  @apply max-w-full object-cover object-center;
+}
+
+svg.icon {
+  @apply w-6 h-6;
+}
+
+/* Button */
+.btn {
+  @apply font-bold text-sm px-9 py-3 rounded-[50px] hover:bg-gray-200;
+}
+.btn-primary {
+  @apply text-white bg-primary hover:bg-secondary hover:shadow;
+}
+.btn-secondary {
+  @apply text-white bg-secondary hover:bg-primary hover:shadow;
+}
+.btn-accent {
+  @apply text-white bg-accent hover:bg-danger hover:shadow;
+}
+
+/* navbar */
+.navigator-items {
+  @apply text-lg transition-colors font-normal hover:cursor-pointer hover:text-primary;
+}
