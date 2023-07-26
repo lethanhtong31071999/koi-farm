@@ -18,8 +18,17 @@ module.exports = {
         light: "f4f2f0",
       },
       screens: {
-        '3xl': '1900px'
-      }
+        "3xl": "1900px",
+      },
+      keyframes: {
+        "ct-spin": {
+          "0%": { transform: "rotate(360deg)" },
+          "100%": { transform: "rotate(0deg)" },
+        },
+      },
+      animation: {
+        "ct-animation-spin": "ct-spin 10s linear infinite",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
