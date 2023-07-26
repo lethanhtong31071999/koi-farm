@@ -1968,6 +1968,18 @@ html {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'https\:\/\/c4\.wallpaperflare\.com\/wallpaper\/820\/891\/627\/fish-nature-lily-wallpaper-preview\.jpg\'\)\] {
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/820/891/627/fish-nature-lily-wallpaper-preview.jpg');
+}
+
+.bg-\[url\(\'https\:\/\/c0\.wallpaperflare\.com\/preview\/415\/31\/673\/shoal-of-koi-fish\.jpg\'\)\] {
+  background-image: url('https://c0.wallpaperflare.com/preview/415/31/673/shoal-of-koi-fish.jpg');
+}
+
+.bg-\[url\(\'https\:\/\/c0\.wallpaperflare\.com\/preview\/423\/748\/34\/animals-aquatic-animal-fish-koi-fish\.jpg\'\)\] {
+  background-image: url('https://c0.wallpaperflare.com/preview/423/748/34/animals-aquatic-animal-fish-koi-fish.jpg');
+}
+
 .from-blue-200 {
   --tw-gradient-from: #bfdbfe var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(191 219 254 / 0) var(--tw-gradient-to-position);
@@ -2348,6 +2360,16 @@ nav .navigator-items.active {
 
   .lg\:basis-1\/2 {
     flex-basis: 50%;
+  }
+
+  .lg\:scale-100 {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 
   .lg\:items-center {
