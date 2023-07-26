@@ -20,13 +20,16 @@ img {
   @apply max-w-full object-cover object-center;
 }
 
-svg.icon {
+.icon {
   @apply w-6 h-6;
 }
 
 /* Button */
 .btn {
-  @apply font-bold text-sm px-9 py-3 rounded-[50px] hover:bg-gray-200;
+  @apply border-0 font-bold text-sm p-2 lg:px-7 py-3 rounded-[50px] hover:scale-105;
+}
+.btn-lg {
+  @apply px-9 py-5;
 }
 .btn-primary {
   @apply text-white bg-primary hover:bg-secondary hover:shadow;
@@ -39,6 +42,9 @@ svg.icon {
 }
 
 /* navbar */
+nav .navigator-items.active {
+  @apply text-accent;
+}
 .navigator-items {
-  @apply text-lg transition-colors font-normal hover:cursor-pointer hover:text-primary;
+  @apply text-sm transition-colors font-bold hover:text-accent uppercase;
 }

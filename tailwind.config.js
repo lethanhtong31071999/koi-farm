@@ -17,6 +17,9 @@ module.exports = {
         white: "#ffffff",
         light: "f4f2f0",
       },
+      screens: {
+        '3xl': '1900px'
+      }
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],

@@ -6,33 +6,171 @@
     <link rel="stylesheet" href="./css/output.css" />
     <title>Koi Farm</title>
   </head>
-  <body>
-    <header>
-      <div class="container md:flex md:flex-row md:justify-between md:py-5">
-        <nav class="md:flex md:gap-x-5">
-          <h1 class="md:text-2xl font-extrabold flex md:items-center md:justify-center">
-            <span class="text-primary font-light">Pisces</span> Koi Farm
+  <body class="min-h-[3000px]">
+    <header
+      id="header"
+      class="sticky top-0 right-0 left-0 z-10 bg-white shadow"
+    >
+      <nav
+        class="container flex flex-row justify-between px-3 lg:px-6 py-3 lg:py-6"
+      >
+        <div class="flex-shrink-0 flex md:gap-x-5">
+          <h1
+            class="text-lg lg:text-xl font-extrabold flex items-center justify-center"
+          >
+            Pisces Koi
           </h1>
-          <ul class="md:flex md:items-center md:justify-center md:gap-x-5">
-            <li class="navigator-items">Trang chủ</li>
-            <li class="navigator-items">Sản phẩm</li>
+          <ul
+            class="hidden md:hidden lg:flex lg:items-center lg:justify-center lg:gap-x-5"
+          >
+            <li class="navigator-items active">
+              <a href="./index.html">Trang chủ</a>
+            </li>
+            <li class="navigator-items"><a href="#">Sản phẩm</a></li>
             <li class="dropdown group hover:cursor-pointer font-normal">
-              <label tabindex="0" class="group-hover:text-primary">Click</label>
+              <button tabindex="0" class="navigator-items">
+                <a href="#">Khác</a>
+              </button>
               <ul
                 tabindex="0"
-                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                <li class="hover:cursor-pointer text-dark hover:text-primary"><a>Item 1</a></li>
-                <li class="hover:cursor-pointer text-dark hover:text-primary"><a>Item 2</a></li>
+                class="dropdown-content z-[100] menu p-2 shadow-sm bg-white rounded-box w-52"
+              >
+                <li class="navigator-items">
+                  <a href="#">Kinh nghiệm nuôi cá</a>
+                </li>
+                <div class="divide-x-2"></div>
+                <li class="navigator-items">
+                  <a href="#">Kinh nghiệm nuôi cá</a>
+                </li>
               </ul>
             </li>
-            <li class="navigator-items">Liên hệ</li>
+            <li class="navigator-items"><a href="#">Liên hệ</a></li>
           </ul>
-        </nav>
-        <div class="md:flex md:flex-row md:justify-end md:items-center">
-          <div class="cart"></div>
-          <div class="btn btn-secondary uppercase">Get Started</div>
         </div>
+        <div class="flex flex-row justify-end items-center gap-2 md:gap-5">
+          <div class="cart">
+            <a
+              href="#"
+              class="btn bg-transparent hover:scale-['unset'] hover:bg-gray-100 border-0 text-dark"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+              <span class="hidden md:inline-block">Giỏ hàng</span>
+              <div class="badge badge-primary text-white">+99</div>
+            </a>
+          </div>
+          <div class="hidden md:block">
+            <a href="#" class="btn btn-secondary uppercase">Get Started</a>
+          </div>
+          <div class="md:hidden">
+            <a href="#" class="text-dark">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon hidden lg:block"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1920"
+                height="36"
+                viewBox="0 0 1920 36"
+                class="icon lg:hidden"
+              >
+                <path
+                  d="M-15,127.772c58.311,4.2,116.622,8.4,174.933,2.721s116.623-21.23,174.933-18.9S451.487,134.124,509.8,141.542s116.628,2.049,174.933-3.147,116.6-10.218,174.933-10.149,116.7,5.231,174.933,3.08,116.344-11.615,174.933-15.683,117.66-2.738,174.933.639,112.749,8.8,174.933,13.4,131.076,8.359,174.933,4.095,62.679-16.557,170.667-6v19.583H-15"
+                  transform="translate(1905 147.355) rotate(180)"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="absolute bottom-0-0 w-full">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1920 36"
+          class="w-full"
+        >
+          <path
+            d="M-15,127.772c58.311,4.2,116.622,8.4,174.933,2.721s116.623-21.23,174.933-18.9S451.487,134.124,509.8,141.542s116.628,2.049,174.933-3.147,116.6-10.218,174.933-10.149,116.7,5.231,174.933,3.08,116.344-11.615,174.933-15.683,117.66-2.738,174.933.639,112.749,8.8,174.933,13.4,131.076,8.359,174.933,4.095,62.679-16.557,170.667-6v19.583H-15"
+            transform="translate(1905 147.355) rotate(180)"
+            fill="#fff"
+          />
+        </svg>
       </div>
     </header>
+    <!-- Banner -->
+    <div id="main-banner">
+      <div class="relative">
+        <div
+          class="flex md:aspect-square lg:aspect-auto min-h-[600px] md:min-h[500px] xl:min-h-[600px] bg-right-bottom xl:bg-center bg-cover bg-[url('https://assets.website-files.com/5f8777f972356e39b046d89f/5fa5b4672f679e21461af5e4_hero_1a.jpg')]"
+        >
+          <div
+            class="flex basis-full lg:basis-1/2 items-center justify-center px-6 xl:px-10"
+          >
+            <div
+              class="md:h-1/2 lg:h-auto md:w-3/4 flex flex-col items-center justify-center md:block rounded-2xl bg-[url('https://assets.website-files.com/5f8777f972356e39b046d89f/5f8b9bf439466a2e75c8dc5e_texture.png')] bg-accent p-5 lg:px-8 lg:py-5 xl:p-16 text-white"
+            >
+              <h2
+                class="text-2xl md:text-2xl xl:text-4xl 3xl:text-6xl font-bold text-white text-center lg:text-left mb-5 xl:mb-9"
+              >
+                Healthy food for busy people
+              </h2>
+              <p
+                class="text-lg md:text-xl xl:text-2xl 3xl:text-3xl text-center lg:text-left mb-5 xl:mb-9"
+              >
+                Imagine devouring delicious, healthy meals daily without so much
+                as lifting a pot.
+              </p>
+              <a
+                href="#"
+                class="btn btn-lg w-full lg:w-auto tracking-widest text-dark hover:text-white bg-white hover:bg-primary uppercase"
+              >
+                HOW IT WORKS
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute bottom-0 w-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1920 36"
+            class="w-full"
+          >
+            <path
+              d="M-15,126.135c58.311-5.641,116.622-11.282,174.933-12.795s116.623,1.1,174.933,6.55S451.487,133.608,509.8,131.947s116.628-13.255,174.933-12.94,116.6,12.539,174.933,12.645,116.7-11.906,174.933-9.771,116.344,18.418,174.933,20.012,117.66-11.5,174.933-20.611,112.749-14.242,174.933-11.067,131.076,14.655,174.933,15.19,62.68-9.876,170.667.729v19.138H-15"
+              transform="translate(15 -109.272)"
+              fill="#fff"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Javascript -->
+    <script src="./js/home.js"></script>
   </body>
 </html>
